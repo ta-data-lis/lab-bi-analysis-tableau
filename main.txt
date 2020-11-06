@@ -1,5 +1,0 @@
-#Link for my lab: https://public.tableau.com/profile/marisa.fernandes#!/vizhome/shared/877B8R5B9
-
-#Question 4 - Bonus: the most preferred payment method in month-to-month contract is the electronic check with paper billing, the most preferred payment method in one year is the electronic check too with paper billing, and the most preferred payment method in two years is credit card without paper billing.  
-
-#Question 6: The higher values of average montly charges are from senior citizens (orange): 98.68 (with a tenure of 39) and 98.23 (with a tenure of 65). In general the company charge more for senior citizens compared to non-senior citizens. 
