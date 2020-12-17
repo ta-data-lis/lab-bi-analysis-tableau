@@ -1,0 +1,33 @@
+Tableau Public Link
+
+
+https://public.tableau.com/profile/christopher.howells#!/vizhome/LabBIAnalysis/Story1?publish=yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Qu 4) Bonus Question
+
+We can see taht shorter month-to-month contracts generally have the highest rate of churn, followed by two year, and one-year contracts have the least
+
+We can see that 'Electronic Check' is the most popular payment method, however it also has the highest rate of Churn.
+
+This is largely due to a hgiher propetion of customers in this group having month-to-month contracts
+
+There are more customer using paperlss billing than not
+
+Qu 6) ii) Sales people are more stubborn giving introductory discounts to women
+
+v) Add the Senior Citizen dimension to the chart. What do you notice? Does the company charge more, less, or the same for senior citizens compared to non-senior citizens?
+
+We can see that senior citizens are charged more on average across all tenure periods
