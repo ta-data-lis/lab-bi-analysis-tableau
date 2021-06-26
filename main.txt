@@ -1,0 +1,24 @@
+    - From this visualization, we can see that most customers who have paperless billing also pay via electronic payment methods (with electronic check being the most popular), while payment via mailed check is the most popular payment option for customers who do not have paperless billing. OK
+    - Bonus: You can also blend in the Contract dimension to get a more granular view of which billing options are most popular among customers on Month-to-Month, One Year, and Two Year service contracts. How? Your visualization should look like this: OK
+
+    - What are your observations?
+
+
+Answer -->xxxx
+
+One of the interesting insights we can see from this perspective is that the company charges new women customers twice as much on average than new male customers. However, we see that by the third month, the price level for men is back up to where it is for women.
+
+How to interpret the insight above? Well, one possibility is that the company regularly runs low-cost 3-month introductory promotions targeted at men to try their services. Do you have other interpretation?
+
+Answer --> 1)Women are willing to pay more for the same service (marketing studies).
+           2)Phone companies are sexist
+
+
+
+
+            
+Add the Senior Citizen dimension to the chart. What do you notice? Does the company charge more, less, or the same for senior citizens compared to non-senior citizens?
+Answer --> Senior Citizens are charged more.
+
+
+LINK TO TABLEAU PUBLIC : https://public.tableau.com/views/W4_LABS2_new/Story1?:language=en-GB&:display_count=n&:origin=viz_share_link
