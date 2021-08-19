@@ -1,0 +1,41 @@
+
+LAB BI Analysis
+
+2. Customer Demographics analysis - 1A
+
+3. Core Services Analysis - 1B
+
+4. 
+Billing options Analysis by Payment method - 1C 
+Billing options Analysis by Payment method and Contract - 1D
+Most people have contract month-to-month, pay with electronick check and have paperless billing. 
+There are more people with two year contract than only one year.
+Most people with two year contract pays by bank transfer or credit card. No significant differences are observed regarding the paperless option.
+
+5. 
+Montly Charge Analysis - 1E
+
+6. 
+Montly Charge Analysis by gender - 1F
+Montly Charge Analysis by senior citizen - 1G
+Company charges more for senior citizens when comparing to non-senior citizens 
+
+7. 
+Montly Charge Analysis by senior citizen and Multiple Lines - 1H
+Montly Charge Analysis by senior citizen and Internet Service - 1I
+
+8. 
+Montly Charge Analysis by gender, senior citizen, Multiple Lines and Internet Service - 1J 
+
+9.
+Number of records by Internet Service Percentage - 1K
+
+10. 
+Number of customers that churn by demographic and service - 1L
+
+11. Story - Tesco customer churn
+
+
+## Deliverables
+
+https://public.tableau.com/views/TelcoCustomerChurn_16292337129060/TescoCustomerChurn?:language=pt-BR&publish=yes&:display_count=n&:origin=viz_share_link
