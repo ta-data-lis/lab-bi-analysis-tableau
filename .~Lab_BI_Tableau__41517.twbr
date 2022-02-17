@@ -1,0 +1,1383 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='churn' inline='true' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='churn' name='textscan.0irrx6s0mg8mku1ai983a00rc83m'>
+            <connection class='textscan' directory='/Users/anamatias/Desktop/IRONHACK/Week4/labsW4/lab-bi-analysis-tableau/data' filename='churn.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0irrx6s0mg8mku1ai983a00rc83m' name='churn.csv' table='[churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customerID' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+            <column datatype='string' name='Partner' ordinal='3' />
+            <column datatype='string' name='Dependents' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='string' name='PhoneService' ordinal='6' />
+            <column datatype='string' name='MultipleLines' ordinal='7' />
+            <column datatype='string' name='InternetService' ordinal='8' />
+            <column datatype='string' name='OnlineSecurity' ordinal='9' />
+            <column datatype='string' name='OnlineBackup' ordinal='10' />
+            <column datatype='string' name='DeviceProtection' ordinal='11' />
+            <column datatype='string' name='TechSupport' ordinal='12' />
+            <column datatype='string' name='StreamingTV' ordinal='13' />
+            <column datatype='string' name='StreamingMovies' ordinal='14' />
+            <column datatype='string' name='Contract' ordinal='15' />
+            <column datatype='string' name='PaperlessBilling' ordinal='16' />
+            <column datatype='string' name='PaymentMethod' ordinal='17' />
+            <column datatype='real' name='MonthlyCharges' ordinal='18' />
+            <column datatype='real' name='TotalCharges' ordinal='19' />
+            <column datatype='string' name='Churn' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0irrx6s0mg8mku1ai983a00rc83m' name='churn.csv' table='[churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customerID' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+            <column datatype='string' name='Partner' ordinal='3' />
+            <column datatype='string' name='Dependents' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='string' name='PhoneService' ordinal='6' />
+            <column datatype='string' name='MultipleLines' ordinal='7' />
+            <column datatype='string' name='InternetService' ordinal='8' />
+            <column datatype='string' name='OnlineSecurity' ordinal='9' />
+            <column datatype='string' name='OnlineBackup' ordinal='10' />
+            <column datatype='string' name='DeviceProtection' ordinal='11' />
+            <column datatype='string' name='TechSupport' ordinal='12' />
+            <column datatype='string' name='StreamingTV' ordinal='13' />
+            <column datatype='string' name='StreamingMovies' ordinal='14' />
+            <column datatype='string' name='Contract' ordinal='15' />
+            <column datatype='string' name='PaperlessBilling' ordinal='16' />
+            <column datatype='string' name='PaymentMethod' ordinal='17' />
+            <column datatype='real' name='MonthlyCharges' ordinal='18' />
+            <column datatype='real' name='TotalCharges' ordinal='19' />
+            <column datatype='string' name='Churn' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customerID]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>customerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SeniorCitizen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SeniorCitizen]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>SeniorCitizen</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Partner]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>Partner</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dependents]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>Dependents</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PhoneService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PhoneService]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>PhoneService</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MultipleLines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MultipleLines]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>MultipleLines</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InternetService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InternetService]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>InternetService</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineSecurity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineSecurity]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>OnlineSecurity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineBackup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineBackup]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>OnlineBackup</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeviceProtection</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeviceProtection]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>DeviceProtection</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TechSupport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TechSupport]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>TechSupport</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingTV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingTV]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>StreamingTV</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingMovies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingMovies]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>StreamingMovies</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaperlessBilling</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaperlessBilling]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>PaperlessBilling</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyCharges]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>MonthlyCharges</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCharges]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>TotalCharges</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Churned' datatype='integer' name='[Calculation_2921499156000624640]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Churn]=&apos;Yes&apos; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Device Protection' datatype='string' name='[DeviceProtection]' role='dimension' type='nominal' />
+      <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+      <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+      <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+      <column caption='Online Backup' datatype='string' name='[OnlineBackup]' role='dimension' type='nominal' />
+      <column caption='Online Security' datatype='string' name='[OnlineSecurity]' role='dimension' type='nominal' />
+      <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='Phone Service' datatype='string' name='[PhoneService]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='dimension' type='ordinal' />
+      <column caption='Streaming Movies' datatype='string' name='[StreamingMovies]' role='dimension' type='nominal' />
+      <column caption='Streaming TV' datatype='string' name='[StreamingTV]' role='dimension' type='nominal' />
+      <column caption='Tech Support' datatype='string' name='[TechSupport]' role='dimension' type='nominal' />
+      <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='churn.csv' datatype='table' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+      <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='churn.csv' id='churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38'>
+            <properties context=''>
+              <relation connection='textscan.0irrx6s0mg8mku1ai983a00rc83m' name='churn.csv' table='[churn#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='customerID' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+                  <column datatype='string' name='Partner' ordinal='3' />
+                  <column datatype='string' name='Dependents' ordinal='4' />
+                  <column datatype='integer' name='tenure' ordinal='5' />
+                  <column datatype='string' name='PhoneService' ordinal='6' />
+                  <column datatype='string' name='MultipleLines' ordinal='7' />
+                  <column datatype='string' name='InternetService' ordinal='8' />
+                  <column datatype='string' name='OnlineSecurity' ordinal='9' />
+                  <column datatype='string' name='OnlineBackup' ordinal='10' />
+                  <column datatype='string' name='DeviceProtection' ordinal='11' />
+                  <column datatype='string' name='TechSupport' ordinal='12' />
+                  <column datatype='string' name='StreamingTV' ordinal='13' />
+                  <column datatype='string' name='StreamingMovies' ordinal='14' />
+                  <column datatype='string' name='Contract' ordinal='15' />
+                  <column datatype='string' name='PaperlessBilling' ordinal='16' />
+                  <column datatype='string' name='PaymentMethod' ordinal='17' />
+                  <column datatype='real' name='MonthlyCharges' ordinal='18' />
+                  <column datatype='real' name='TotalCharges' ordinal='19' />
+                  <column datatype='string' name='Churn' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column datatype='string' name='[Dependents]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Partner]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='churn.csv' datatype='integer' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='churn.csv' datatype='table' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Dependents]' derivation='None' name='[none:Dependents:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Partner]' derivation='None' name='[none:Partner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SeniorCitizen]' derivation='None' name='[none:SeniorCitizen:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' />
+              <text column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:gender:nk] / [federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok])</rows>
+        <cols total='true'>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:Partner:nk] / [federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:Dependents:nk])</cols>
+      </table>
+      <simple-id uuid='{FEBC2921-99BB-4242-B08E-3B610FB04231}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='churn.csv' datatype='integer' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='churn.csv' datatype='table' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PaperlessBilling]' derivation='None' name='[none:PaperlessBilling:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PaymentMethod]' derivation='None' name='[none:PaymentMethod:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:PaperlessBilling:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:PaymentMethod:nk] * [federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk])</rows>
+        <cols>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:Contract:nk]</cols>
+      </table>
+      <simple-id uuid='{2533DBCB-CE62-43D6-88D2-A41B1CCF6EDC}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+            <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='churn.csv' datatype='integer' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column caption='Phone Service' datatype='string' name='[PhoneService]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='churn.csv' datatype='table' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InternetService]' derivation='None' name='[none:InternetService:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MultipleLines]' derivation='None' name='[none:MultipleLines:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PhoneService]' derivation='None' name='[none:PhoneService:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' />
+              <text column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:PhoneService:nk] / [federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:MultipleLines:nk])</rows>
+        <cols total='true'>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:InternetService:nk]</cols>
+      </table>
+      <simple-id uuid='{81104FE6-0583-42D6-A9A3-1BB52A2F78FA}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='churn.csv' datatype='integer' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='churn.csv' datatype='table' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PaperlessBilling]' derivation='None' name='[none:PaperlessBilling:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PaymentMethod]' derivation='None' name='[none:PaymentMethod:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:PaperlessBilling:nk]' />
+              <text column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]</rows>
+        <cols>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:PaymentMethod:nk]</cols>
+      </table>
+      <simple-id uuid='{E3662144-2FA3-44D4-9C94-886FFA415892}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column-instance column='[MonthlyCharges]' derivation='Avg' name='[avg:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tenure]' derivation='None' name='[none:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]</rows>
+        <cols>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:tenure:qk]</cols>
+      </table>
+      <simple-id uuid='{08D93239-AA44-41F2-B8EC-B9C1C4DE14FA}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column-instance column='[MonthlyCharges]' derivation='Avg' name='[avg:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tenure]' derivation='None' name='[none:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:gender:nk]' />
+              <text column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]</rows>
+        <cols>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:tenure:qk]</cols>
+      </table>
+      <simple-id uuid='{106E12AF-35C7-4585-8256-8241A7E70039}' />
+    </worksheet>
+    <worksheet name='Sheet 5 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='dimension' type='ordinal' />
+            <column-instance column='[MonthlyCharges]' derivation='Avg' name='[avg:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SeniorCitizen]' derivation='None' name='[none:SeniorCitizen:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[tenure]' derivation='None' name='[none:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok]' />
+              <text column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]</rows>
+        <cols>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:tenure:qk]</cols>
+      </table>
+      <simple-id uuid='{34619625-2C1C-47C9-93C4-1E904911323A}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='dimension' type='ordinal' />
+            <column-instance column='[MonthlyCharges]' derivation='Avg' name='[avg:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MultipleLines]' derivation='None' name='[none:MultipleLines:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SeniorCitizen]' derivation='None' name='[none:SeniorCitizen:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[tenure]' derivation='None' name='[none:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:MultipleLines:nk] * [federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk])</rows>
+        <cols>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:tenure:qk]</cols>
+      </table>
+      <simple-id uuid='{4ECA15CF-DFE9-4511-B466-314897615B26}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='dimension' type='ordinal' />
+            <column-instance column='[MonthlyCharges]' derivation='Avg' name='[avg:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[InternetService]' derivation='None' name='[none:InternetService:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SeniorCitizen]' derivation='None' name='[none:SeniorCitizen:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[tenure]' derivation='None' name='[none:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:InternetService:nk] * [federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk])</rows>
+        <cols>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:tenure:qk]</cols>
+      </table>
+      <simple-id uuid='{96130A76-8076-48E4-9FA6-EF5EC8DA8555}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='churn.csv' datatype='integer' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='churn.csv' datatype='table' name='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[InternetService]' derivation='None' name='[none:InternetService:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SeniorCitizen]' derivation='None' name='[none:SeniorCitizen:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[pcto:cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' />
+              <text column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[pcto:cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok]</rows>
+        <cols total='true'>[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:InternetService:nk]</cols>
+        <percentages enabled='true' mode='column' />
+      </table>
+      <simple-id uuid='{3A08D0F8-C244-4A95-9796-ED1A2D21DE33}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='dimension' type='ordinal' />
+            <column-instance column='[MonthlyCharges]' derivation='Avg' name='[avg:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[InternetService]' derivation='None' name='[none:InternetService:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MultipleLines]' derivation='None' name='[none:MultipleLines:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SeniorCitizen]' derivation='None' name='[none:SeniorCitizen:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]' />
+              <text column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:InternetService:nk] / [federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:MultipleLines:nk])</rows>
+        <cols total='true'>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:gender:nk] / [federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok])</cols>
+      </table>
+      <simple-id uuid='{EE2C2384-8DCA-4A5F-817B-BEFA6BF5CCA0}' />
+    </worksheet>
+    <worksheet name='Sheet 9 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.04yriz10bg31sx1fzy5c21t1zy3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04yriz10bg31sx1fzy5c21t1zy3w'>
+            <column caption='Churned' datatype='integer' name='[Calculation_2921499156000624640]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Churn]=&apos;Yes&apos; THEN 1 ELSE 0 END' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+            <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2921499156000624640]' derivation='Avg' name='[avg:Calculation_2921499156000624640:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[InternetService]' derivation='None' name='[none:InternetService:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MultipleLines]' derivation='None' name='[none:MultipleLines:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SeniorCitizen]' derivation='None' name='[none:SeniorCitizen:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:Calculation_2921499156000624640:qk]' />
+              <text column='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:Calculation_2921499156000624640:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:InternetService:nk] / [federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:MultipleLines:nk])</rows>
+        <cols total='true'>([federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:gender:nk] / [federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok])</cols>
+      </table>
+      <simple-id uuid='{B8203162-604A-4FC6-AA3F-8ECEE1C13AF6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='10' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='company&apos;s customers from a demographics perspective' captured-sheet='Sheet 1' id='1' />
+                  <story-point caption='core services customers signed up for' captured-sheet='Sheet 2' id='2' />
+                  <story-point caption='billing options that are most popular among customers' captured-sheet='Sheet 3' id='3' />
+                  <story-point caption='billing options that are most popular among customers on different contracts' captured-sheet='Sheet 10' id='4' />
+                  <story-point caption='how pricing (Monthly Charge) changes with longevity (Tenure)' captured-sheet='Sheet 4' id='5' />
+                  <story-point caption='how pricing changes for gender' captured-sheet='Sheet 5' id='6' />
+                  <story-point caption='how pricing changes for Senior Citizens' captured-sheet='Sheet 5 (2)' id='7' />
+                  <story-point caption='how average monthly charge varies for seniors vs non-seniors when the customer signed up for multiple lines' captured-sheet='Sheet 6' id='8' />
+                  <story-point caption='how average monthly charge varies for seniors vs non-seniors when the customer signed up for different Internet Service' captured-sheet='Sheet 7' id='9' />
+                  <story-point caption='pricing for different demongraphics vs services ' captured-sheet='Sheet 9' id='10' />
+                  <story-point caption='internet services for senior vs non-senior ' captured-sheet='Sheet 8' id='11' />
+                  <story-point caption='number of customers that churn by demographic and service combination' captured-sheet='Sheet 9 (2)' id='12' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{ED2A0CB4-D791-4AFE-A5C1-EDA51DFD51F7}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A318AEBF-161F-4B13-BBED-3D576E1BE252}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{41ECB7F6-1859-4C7C-B0B8-AE8189A17907}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:PaperlessBilling:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7B544AE4-05CB-4045-B2F9-90231D8F688B}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:PaperlessBilling:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{359F4BD4-8821-4631-9422-1AFAC29E2DE0}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{232DAB90-432D-4FB5-8F8E-DD8F5641BCBE}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0AEA763B-5C37-4BC6-B042-E311936232FE}' />
+    </window>
+    <window class='worksheet' name='Sheet 5 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1C3B0C92-4A83-42E2-9CD2-89C23972A3B4}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BA9E64EA-3F27-4243-A8F7-CAC56B127B73}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[none:SeniorCitizen:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{501CB9CC-4E8A-40EE-8C18-68DE13947F6C}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:MonthlyCharges:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B18088FF-EFBD-4330-8F75-1D0BC89FFF80}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[__tableau_internal_object_id__].[pcto:cnt:churn.csv_D3AC5AB3CBBE4D5C8E1F83580BAFFE38:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{75D6577B-7321-40AB-B9B2-F3C10B8085B5}' />
+    </window>
+    <window class='worksheet' name='Sheet 9 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.04yriz10bg31sx1fzy5c21t1zy3w].[avg:Calculation_2921499156000624640:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A068089A-F5FF-4426-A8FE-70D837C78B83}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{83198B20-29B2-4171-8229-340727F92E21}' />
+    </window>
+  </windows>
+</workbook>
