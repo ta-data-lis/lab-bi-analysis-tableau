@@ -1,0 +1,3 @@
+Link to the Tableau file:
+
+https://public.tableau.com/app/profile/asier.rodriguez/viz/LabBIanalysis_16521202027570/ChurnBIStory?publish=yes
