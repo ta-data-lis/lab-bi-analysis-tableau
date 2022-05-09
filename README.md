@@ -50,6 +50,8 @@ To complete this lab, follow each of the steps below.
 
     - What are your observations?
 
+    --> My obeservations are that month-to month contract is most common for people who pay with electronic check. One year contract seems to be the least attractive contract method over all (besides people paying with elecromic check)
+
 5. Now that we have looked at customer distribution from a variety of perspectives, let's shift our focus to some of the other measures in our data set. Specifically, let's take a look at how pricing (Monthly Charge) changes with longevity (Tenure). 
     - Create a visualization that:
         - Is a line chart where Tenure is the X axis and Average Monthly Charges is the Y Axis.
@@ -70,6 +72,9 @@ To complete this lab, follow each of the steps below.
     1. How to interpret the insight above? Well, one possibility is that the company regularly runs low-cost 3-month introductory promotions targeted at men to try their services. Do you have other interpretation?
     1. Create another duplicate of the original Monthly Charge by Tenure visualization. Add the Senior Citizen dimension.
     1. Add the Senior Citizen dimension to the chart. What do you notice? Does the company charge more, less, or the same for senior citizens compared to non-senior citizens?
+
+Observation: We can see that the company charges more for senior citicens than for the group of non senior ones. 
+
 7. The pricing charts we have looked at thus far makes it seem like the company is providing cheaper services to some customers based on demographics. However, we should also take into consideration that pricing is typically heavily dependent on services purchased (e.g. Multiple Lines and Internet Service. It may just be that seniors purchase more expensive services (i.e. multiple lines and type of Internet service) on average than younger customers. To test our theory, let's look at how pricing varies across services.
     - Create another duplicate of the original Monthly Charge by Tenure visualization. Add the relevant dimensions to visualize how average monthly charge varies for seniors vs non-seniors when the customer signed up for multiple lines. Your end product should look like this:
 
