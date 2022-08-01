@@ -70,6 +70,7 @@ To complete this lab, follow each of the steps below.
     1. How to interpret the insight above? Well, one possibility is that the company regularly runs low-cost 3-month introductory promotions targeted at men to try their services. Do you have other interpretation?
     1. Create another duplicate of the original Monthly Charge by Tenure visualization. Add the Senior Citizen dimension.
     1. Add the Senior Citizen dimension to the chart. What do you notice? Does the company charge more, less, or the same for senior citizens compared to non-senior citizens?
+
 7. The pricing charts we have looked at thus far makes it seem like the company is providing cheaper services to some customers based on demographics. However, we should also take into consideration that pricing is typically heavily dependent on services purchased (e.g. Multiple Lines and Internet Service. It may just be that seniors purchase more expensive services (i.e. multiple lines and type of Internet service) on average than younger customers. To test our theory, let's look at how pricing varies across services.
     - Create another duplicate of the original Monthly Charge by Tenure visualization. Add the relevant dimensions to visualize how average monthly charge varies for seniors vs non-seniors when the customer signed up for multiple lines. Your end product should look like this:
 
@@ -93,12 +94,19 @@ To complete this lab, follow each of the steps below.
         ![Senior vs Internet Service](senior-vs-internet-service.png)
 
     - From this visualization, we can see that the proportion of customers that have fiber optic internet (the highest price service) is higher among seniors than it is among non-seniors. This is likely the cause for the price difference among those two groups. Seniors indeed tend to sign up for more expensive services.
+	
 10. The final perspective we will analyze this data set from is the number of customers that churn by demographic and service combination.
+
     - Create another duplicate of the highlight table visualization showing pricing by demographics and services.
+
     - Create a calculated field called Churned by going to *Analysis > Create Calculated Field* and entering the following formula: `IF [Churn]='Yes' THEN 1 ELSE 0 END`.
+
     - Drag and drop the newly-created Churned measure to replace Monthly Charges wherever it appears in the Marks section.
+
     - By default, Tableau will sum the measure which will show us the number of customers that churned in each segment. This is useful, but what we really want to see is the percentage of customers that churned. To see this, click on the drop-down next to the dimension wherever it appears in the Marks section, select *Measure*, and change the value to *Average*.
+
     - We can see that the churn rates are higher for fiber optic internet across the board than for any other service. We know that fiber is also the highest priced, so perhaps customers aren't happy paying such high prices.
+
 11. Next, we are going to combine all the visualizations we used to explore the data into a Tableau Story.
     - Create a new Story by clicking on *Story > New Story*).
     - Our story should document our journey throughout this lab, so you should create a Story Point for each visualization we have created. You can create a new Story Point by clicking on the *Blank* button under the *New Story Point* heading in the left pane of the workbook.
