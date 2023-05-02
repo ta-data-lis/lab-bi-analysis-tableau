@@ -1,0 +1,3 @@
+lab-bi-analysis-tableau
+
+-->> https://public.tableau.com/views/bi-analysis-tableau_16830648414540/Story1?:language=pt-BR&:display_count=n&:origin=viz_share_link
