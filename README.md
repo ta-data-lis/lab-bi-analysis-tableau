@@ -41,7 +41,7 @@ To complete this lab, follow each of the steps below.
     - Displays a number of records label on each segment of the stacked bars.
     - Your visualization should look like this: 
 
-        ![Payment Method vs Paperless Billing](payment-vs-paperless-billing.png).
+        ![Payment Method vs Paperless Billing](payment-wvs-paperless-billing.png).
 
     - From this visualization, we can see that most customers who have paperless billing also pay via electronic payment methods (with electronic check being the most popular), while payment via mailed check is the most popular payment option for customers who do not have paperless billing.
     - Bonus: You can also blend in the Contract dimension to get a more granular view of which billing options are most popular among customers on Month-to-Month, One Year, and Two Year service contracts. How? Your visualization should look like this:
@@ -52,7 +52,7 @@ To complete this lab, follow each of the steps below.
 
 5. Now that we have looked at customer distribution from a variety of perspectives, let's shift our focus to some of the other measures in our data set. Specifically, let's take a look at how pricing (Monthly Charge) changes with longevity (Tenure). 
     - Create a visualization that:
-        - Is a line chart where Tenure is the X axis and Average Monthly Charges is the Y Axis.
+            - Is a line chart where Tenure is the X axis and Average Monthly Charges is the Y Axis.
         - Shows Average Monthly Charges as labels on the data points of the line chart.
     - Your line chart should look like below:
 
