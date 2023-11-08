@@ -80,7 +80,7 @@ To complete this lab, follow each of the steps below.
         ![Senior Montly Charge by Internet Service](senior-monthly-charge-by-internet-service.png)
 
     - The charts above suggest the company charges seniors significantly more than non-seniors for those who sign up for single-line phone service. The company charges seniors slightly more than non-seniors for those who sign up for multiple-line phone service. There is no obvious charge difference between senior and non-senior when they sign up differen types of Internet Service.
-8. Instead of using line charts to visualize pricing for different demongraphics vs services separately, we can also visualize both demographics *and* services at the same time using *highlight table*.
+8. Instead of using line charts to visualize pricing for different demographics vs services separately, we can also visualize both demographics *and* services at the same time using *highlight table*.
     - Create a highlight table to visualize Average Monthly Charges by Internet Service and Multiple Lines (rows) and Gender and Senior Citizen (columns).
     - Display row and column grand totals.
     - From this perspective, we can see that the prices for the different combination of core services do not differ significantly across demographic features.
